@@ -1,0 +1,181 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>KIET Wi‑Fi Login</title>
+   <style>
+
+     :root {
+       --kiet-blue: #055bb5;
+       --kiet-blue-dark: #023d7a;
+       --kiet-link: #4019ff;
+       --kiet-green: #44ac33;
+       --kiet-orange: #ffb330;
+       --text: #5c5c5c;
+       --border: #d7dbdd;
+     }
+      h1{ font-size: 12.8pt; color: #055bb5; font-weight:500; }
+      h1, h4{ font-family: 'InterLight', sans-serif;}
+     html, body {
+       height: 100%;
+       margin: 0;
+       background: #ffffff;
+       color: var(--text);
+       font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+       line-height: 1.4;
+     }
+     input::placeholder {
+    color: grey;   /* any color you want */
+    opacity: 0.3;      /* makes the color fully visible */
+}
+     a { color: #1987cb; text-decoration: none; }
+     a:hover { color: #878b97; }
+ 
+     .page {
+       max-width: 1120px;
+       margin: 0 auto;
+       padding: 32px 16px 80px;
+       text-align: center;
+     }
+     /* h1, h4 { font-family: 'InterLight', sans-serif;} */
+     /* Top helper links */
+     .helper-links { margin-bottom: 81px; }
+     .helper-links p { margin: 11px 0; }
+     .helper-links .lead { color: #ff0000; font-weight: 700; font-size: 16px; margin-bottom: 0px; }
+     .helper-links .set-1 a { font-weight: 1000; font-size: 13pt; font-family: arial black, avant garde;}
+     
+     .helper-links .set-1 .erp { color: #008000; }
+     .helper-links .set-1 .site { color: #3366ff; }
+     .helper-links .set-1 .mail { color: #000080; }
+     .helper-links .set-1 .o365 { color: #ff6600;}
+     .helper-links .set-1{margin-top: 0px; padding: 0px;}
+     /* Card */
+     .card {
+       width: 320px;
+       margin: 42px auto 0;
+       background: #fff;
+       box-shadow: none;
+     }
+ 
+     .card-header {
+      text-align: center;
+      background: var(--kiet-orange);
+      height:80px;
+      border-radius: 5px 5px 0 0;
+     }
+ 
+    .card-header .banner {
+        display: inline-block;
+        height: 48px;
+        margin-top: 18px;
+        background: center / contain no-repeat url('kiet_logo.png');
+        }
+ 
+     .card-body { padding: 31.5px; 
+      height: 320px;
+      border: 1px solid var(--border);
+      border-radius: 0px;
+      border-top: 0px;
+    }
+     .signin-title {
+       color: var(--kiet-blue);
+       /* font-size: 16px;
+       margin: 0 0 16px;
+       font-weight: 700; */
+     }
+
+     .input {
+       width: 100%;
+       height: 34px;
+       border: 1px solid var(--border);
+       border-radius: 8px;
+       padding: 12px 14px;
+       font-size: 14px;
+       color: #333;
+       margin: 10px 0;
+       box-sizing: border-box;
+     }
+     .input:focus { outline: none; border-color: #2e8cdc; }
+ 
+     .button {
+       width: 100%;
+       height: 33px;
+       border: 0;
+       border-radius: 6px;
+       /* padding: 12px 14px; */
+       background: var(--kiet-green);
+       color: #fff;
+       font-weight: 500;
+       font-size: 14px;
+       cursor: pointer;
+       margin-top: 27px;
+     }
+     .button:hover { background: #55bd42; }
+ 
+     .links { list-style: none; margin: 10px 0 0; padding: 0; }
+     .links li { margin: 10px 0; }
+     .links a { color: var(--kiet-link); font-weight: 600; }
+ 
+     .status { min-height: 20px; margin-top: 12px; font-size: 13px; }
+ 
+     /* Footer */
+     .footer { margin-top: 8px; }
+     .footer .note { color: #ff0000; font-weight: 550; font-size: 17px; }
+     .footer .reset-lead { color: #ff9900; font-weight: 500; font-size: 16px; }
+     .footer .reset a { font-weight: 1000; font-size: 13pt; font-family: arial black, avant garde;color: #008000;}
+ 
+     @media (max-width: 480px) {
+       .card { width: 92vw; }
+       .card-header .banner { height: 48px; }
+     }
+   </style>
+ </head>
+ <body>
+   <main class="page">
+     <div class="helper-links">
+      <br>
+      <p style="margin-top: 27px; font-weight: 500; font-size: 12.5pt;" class="lead">Click here for:</p>
+       <p class="set-1">
+         <a class="erp" href="https://tech.kiet.edu/ERP.php" target="_blank" rel="noopener">KIET ERP Portal</a>
+         <span> </span>
+         <a class="site" href="https://www.kiet.edu/#/Home" target="_blank" rel="noopener">KIET Web Site</a>
+         <a class="mail" href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;ltmpl=default&amp;hd=kiet.edu&amp;service=mail&amp;sacu=1&amp;rip=1&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin" target="_blank" rel="noopener"> KIET Email </a>
+         <a class="o365" href="https://login.microsoftonline.com/?whr=kiet.edu" target="_blank" rel="noopener">Office o365 Login</a>
+       </p>
+       <p><a style="color:#800080; font-weight: 500; font-size: 13pt;">For any type of IT services please Contact us: Email- <span style="color:#ff0000">itsupport@kiet.edu</span>, Helpline and whatsapp No:<span style="color:#ff0000">8744097774</span></a></p>
+       <p><span style="color:#ff6600">(Please ignore calls on personal mobile number)</span></p>
+     </div>
+     <section class="card" aria-label="Login">
+       <div class="card-header">
+        <!-- <a href="/Users/kartik/Documents/cyber_projects/kiet_logo.png" target="_blank">
+          <span class="banner" role="img" aria-label="KIET Group of Institutions banner"></span>
+        </a> -->
+        <img src="kiet_logo.png" alt="KIET Group of Institutions banner" class="banner">
+       </div>
+       <div class="card-body">
+         <h1 class="signin-title">Sign in with your Internet Login ID</h1>
+          <form class="form" action="/login" method="POST">
+           <input class="input" type="text" name="username" placeholder="Username" size="30" maxlength="60"/>
+           <input class="input" type="password" name="password" placeholder="Password" size='30' autocomplete='off' maxlength='60'/>
+           <button class="button" type="submit">Sign in</button>
+         </form>
+         <br>
+         <br>
+         
+         <ul class="links">
+           <li><a style="font-size:10pt; font-weight: 600;" href="#">Access the User Portal</a></li>
+         </ul>
+         <div class="status" aria-live="polite"></div>
+       </div>
+     </section>
+     <br>
+     <div class="footer">
+       <p class="note">Note: Please Change Your Default Password Before Login</p>
+       <span class="reset-lead">Click here for:</span>
+       <br>
+       <span class="reset"><a href="http://10.0.0.10:8181/authorization.do" target="_blank" rel="noopener">Change or reset your password</a></span>
+     </div>
+   </main>
+ </body>
+ </html>
